@@ -4,22 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\Workflow.css">
     <title>Document</title>
 </head>
 <body>
-  <div class="workflow">
-    <h1>ご依頼までの流れ</h1>
+  <div id="workflow">
+    <h1 class="request">ご依頼までの流れ</h1>
     <nav>
       <div>連絡</div>
       <div>相談</div>
       <div>研修・セミナー</div>
     </nav>
-    <h1>研修・セミナー一覧</h1>
-    <nav>
-      <div>スマイルトレーニング®(笑顔講座)</div>
-      <div>ホスピタリティレッスン</div>
-      <div>社員研修</div>
-    </nav>
+    <h1 class="seminar">研修・セミナー一覧</h1>
+    <div class="tabs">
+      <div class="tab" onclick="showTab('tab1')">
+        スマイルトレーニング®（笑顔講座​）
+      </div>
+      <div class="tab" onclick="showTab('tab2')">
+        ホスピタリティレッスン
+      </div>
+      <div class="tab" onclick="showTab('tab3')">
+        社員研修 新入社員研修
+      </div>
+    </div>
+    
+    <div id="tab1" class="content">
+      <div>
+        <h2>Tab 1 Content</h2>
+        <p>This is the content for Tab 1.</p>
+      </div>
+      <div>
+        <h2>Tab 1 Content</h2>
+        <p>This is the content for Tab 1.</p>
+      </div>
+    </div>
+    
+    <div id="tab2" class="content hidden">
+      <div>
+        <h2>Tab 2 Content</h2>
+        <p>This is the content for Tab 2.</p>
+      </div>
+      <div>
+        <h2>Tab 2 Content</h2>
+        <p>This is the content for Tab 2.</p>
+      </div>
+    </div>
+    
+    <div id="tab3" class="content hidden">
+      <div>
+        <h2>Tab 3 Content</h2>
+        <p>This is the content for Tab 3.</p>
+      </div>
+      <div>
+        <h2>Tab 3 Content</h2>
+        <p>This is the content for Tab 3.</p>
+      </div>
+    </div>
   </div>
+    <script>
+      function showTab(tabId) {
+        document.querySelectorAll('.content').forEach(function(tabContent) {
+          tabContent.classList.add('hidden');
+        });
+        document.getElementById(tabId).classList.remove('hidden');
+      }
+    </script>
 </body>
 </html>

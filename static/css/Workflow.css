@@ -1,0 +1,50 @@
+
+#workflow{
+  background-color: #FFF8E3;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+.request{
+  background: -webkit-linear-gradient(0deg, #FC2637, #FFB877);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.seminar{
+  color: #87000B;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  margin: 5px 10px;
+  text-align: center;
+  background-color: #E2929B;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.tab:hover {
+  background-color: #8c595f;
+}
+
+.content {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hidden {
+  display: none;
+}
