@@ -10,54 +10,70 @@
 <body>
   <div id="workflow">
     <h1 class="request">ご依頼までの流れ</h1>
-    <nav>
-      <div>連絡</div>
-      <div>相談</div>
-      <div>研修・セミナー</div>
+    <nav class="flow">
+      <div class="circle">連絡</div>
+      <div class="arrow"><div class="arrow-round"></div></div>
+      <div class="circle">相談</div>
+      <div class="arrow"><div class="arrow-round"></div></div>
+      <div class="circle">研修・セミナー</div>
     </nav>
     <h1 class="seminar">研修・セミナー一覧</h1>
     <div class="tabs">
       <div class="tab" onclick="showTab('tab1')">
-        スマイルトレーニング®（笑顔講座​）
+        <p>スマイルトレーニング®</P>
+        <p>（笑顔講座​）</p>
       </div>
       <div class="tab" onclick="showTab('tab2')">
-        ホスピタリティレッスン
+        <p>ホスピタリティ</p>
+        <p>レッスン</p>
       </div>
       <div class="tab" onclick="showTab('tab3')">
-        社員研修 新入社員研修
+        <p>社員研修</p>
+        <p>新入社員研修</p>
       </div>
     </div>
     
     <div id="tab1" class="content">
-      <div>
-        <h2>Tab 1 Content</h2>
-        <p>This is the content for Tab 1.</p>
+      <div class="list">
+        <ui>こんな方にお勧め</ui>
+        <li>婚活、就活の方</li>
+        <li>写真写りを良くしたい方</li>
+        <li>たるみが気になる方</li>
       </div>
-      <div>
-        <h2>Tab 1 Content</h2>
-        <p>This is the content for Tab 1.</p>
+      <div class="list">
+        <ui>この講座で得られる効果</ui>
+        <li>第一印象をよくする</li>
+        <li>自身の顔の癖を把握する</li>
+        <li>印象の良い笑顔を知る</li>
       </div>
     </div>
     
     <div id="tab2" class="content hidden">
-      <div>
-        <h2>Tab 2 Content</h2>
-        <p>This is the content for Tab 2.</p>
+      <div class="list">
+        <ui>こんな方にお勧め</ui>
+        <li>社内の雰囲気を良くしたい方</li>
+        <li>人間関係を良くしたい方</li>
+        <li>周りの人をハッピーにしたい方</li>
       </div>
-      <div>
-        <h2>Tab 2 Content</h2>
-        <p>This is the content for Tab 2.</p>
+      <div class="list">
+        <ui>この講座で得られる効果</ui>
+        <li>職場環境の改善</li>
+        <li>良い人間関係の構築</li>
+        <li>顧客満足度の向上</li>
       </div>
     </div>
     
     <div id="tab3" class="content hidden">
-      <div>
-        <h2>Tab 3 Content</h2>
-        <p>This is the content for Tab 3.</p>
+      <div class="list">
+        <ui>こんな方にお勧め</ui>
+        <li>新卒や中途採用する方</li>
+        <li>ビジネスマナーを学びたい方</li>
+        <li>電話対応に困っている方</li>
       </div>
-      <div>
-        <h2>Tab 3 Content</h2>
-        <p>This is the content for Tab 3.</p>
+      <div class="list">
+        <ui>この講座で得られる効果</ui>
+        <li>社会人の心構え</li>
+        <li>ビジネスマナー</li>
       </div>
     </div>
   </div>
