@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\Workflow.css">
+    <title>Document</title>
+</head>
+<body>
+  <div id="workflow">
+    <h1 class="request">ご依頼までの流れ</h1>
+    <nav class="flow">
+      <div class="circle">連絡</div>
+      <div class="arrow"><div class="arrow-round"></div></div>
+      <div class="circle">相談</div>
+      <div class="arrow"><div class="arrow-round"></div></div>
+      <div class="circle">研修・セミナー</div>
+    </nav>
+    <h1 class="seminar">研修・セミナー一覧</h1>
+    <div class="tabs">
+      <div class="tab" onclick="showTab('tab1')">
+        <p>スマイルトレーニング®</P>
+        <p>（笑顔講座​）</p>
+      </div>
+      <div class="tab" onclick="showTab('tab2')">
+        <p>ホスピタリティ</p>
+        <p>レッスン</p>
+      </div>
+      <div class="tab" onclick="showTab('tab3')">
+        <p>社員研修</p>
+        <p>新入社員研修</p>
+      </div>
+    </div>
+    
+    <div id="tab1" class="content">
+      <div class="list">
+        <ui>こんな方にお勧め</ui>
+        <li>婚活、就活の方</li>
+        <li>写真写りを良くしたい方</li>
+        <li>たるみが気になる方</li>
+      </div>
+      <div class="list">
+        <ui>この講座で得られる効果</ui>
+        <li>第一印象をよくする</li>
+        <li>自身の顔の癖を把握する</li>
+        <li>印象の良い笑顔を知る</li>
+      </div>
+    </div>
+    
+    <div id="tab2" class="content hidden">
+      <div class="list">
+        <ui>こんな方にお勧め</ui>
+        <li>社内の雰囲気を良くしたい方</li>
+        <li>人間関係を良くしたい方</li>
+        <li>周りの人をハッピーにしたい方</li>
+      </div>
+      <div class="list">
+        <ui>この講座で得られる効果</ui>
+        <li>職場環境の改善</li>
+        <li>良い人間関係の構築</li>
+        <li>顧客満足度の向上</li>
+      </div>
+    </div>
+    
+    <div id="tab3" class="content hidden">
+      <div class="list">
+        <ui>こんな方にお勧め</ui>
+        <li>新卒や中途採用する方</li>
+        <li>ビジネスマナーを学びたい方</li>
+        <li>電話対応に困っている方</li>
+      </div>
+      <div class="list">
+        <ui>この講座で得られる効果</ui>
+        <li>社会人の心構え</li>
+        <li>ビジネスマナー</li>
+      </div>
+    </div>
+  </div>
+    <script>
+      function showTab(tabId) {
+        document.querySelectorAll('.content').forEach(function(tabContent) {
+          tabContent.classList.add('hidden');
+        });
+        document.getElementById(tabId).classList.remove('hidden');
+      }
+    </script>
+</body>
+</html>
