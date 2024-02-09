@@ -1,0 +1,100 @@
+:root {
+    --profile-h1-color: #000088;
+    --profile-border-color: #D7005A;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+
+/* TOP */
+.Top-background {
+max-width: 100%; /* 幅が画面に収まるようにする */
+padding-bottom: 30px;
+}
+
+.Top-background img {
+width: 100%; /* 要素の幅いっぱいに画像を表示 */
+height: auto; /* アスペクト比を保持しつつ、画像の高さを自動調整 */
+}
+
+.Top-link-list {
+padding-bottom: 136px;
+}
+
+.Top-link-list .list {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+padding: 0 70px;
+width: 100%;
+list-style: none;
+}
+
+.Top-link-list .item {
+width: 33.33%;
+}
+
+.Top-link-list .link {
+margin: 0 21px;
+display: block;
+text-decoration: none;
+}
+
+.Top-link-list .card {
+display: block;
+}
+
+.Top-link-list .img img {
+-webkit-transition: -webkit-transform 1s;
+transition: -webkit-transform 1s;
+-o-transition: transform 1s;
+transition: transform 1s;
+transition: transform 1s, -webkit-transform 1s;
+width: 100%;
+border-radius: 41px;
+}
+
+.Top-link-list .ttl {
+margin-top: 25px;
+letter-spacing: 0.07em;
+font-size: 1.4rem;
+line-height: 1.2;
+color: #555;
+}
+
+.Top-link-list .txt {
+margin-top: 8px;
+letter-spacing: 0.06em;
+font-size: 1rem;
+color: #f7a3ba;
+}
+
+.fadeInDown {
+visibility: visible;
+-webkit-animation-name: fadeInDown;
+animation-name: fadeInDown;
+-webkit-animation-duration: .8s;
+animation-duration: .8s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+.img-Request {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.fixed-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    margin: 20px; /* 必要に応じて調整してください */
+    z-index: 1000; /* 必要に応じて調整してください */
+}
