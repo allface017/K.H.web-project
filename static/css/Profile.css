@@ -1,0 +1,121 @@
+:root {
+    --profile-h1-color: #000088;
+    --profile-border-color: #D7005A;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+
+/* プロフィールCSS*/
+.profile-font {
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+.profile-title {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #FC2637, #FFB877);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+}
+.profile-name {
+    padding-left: 10px;
+    font-size: 2rem;
+    color: #D7005A;
+    letter-spacing: 3px;
+    padding:0 0 0 30px;
+}
+.profile-h3  {
+    font-size: 1.4rem;
+    color: #D7005A;
+    display:inline-block;   
+    border-bottom: 1px solid var(--profile-border-color);
+}
+
+.content1 {
+    text-align: left; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content2,.content3 {
+    margin: 0 100px 120px; /* 左右の余白を自動で調整して中央に配置 */
+    max-width: 820px; /* 必要に応じて適切な幅を指定 */
+}
+
+    .content1_left {
+        flex: 0 0 40%; /* 左側の幅を調整してください */
+        
+    }
+
+    .content1_right {
+        flex: 0 0 50%; /* 右側の幅を調整してください */
+
+    }
+
+.profile-text {
+    color: #D7005A; /* テキストの色を設定してください */
+}
+
+.content1_a {
+    display: flex;
+    flex-direction: row; /* 画像を右側に配置 */
+    align-items: center; /* 中央揃え */
+}
+
+.profile-img{
+    width: 430px;
+    height: 440px;
+    object-fit: cover;
+    padding: 20px 20px 30px 30px;
+}
+.profile-dex {
+    color: #D7005A;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.profile-nom {
+    font-size: 1.25rem;
+}
+
+.profile-sup{
+    font-size: 2rem;
+}
+
+.content2 h2.profile-sup,
+.content3 h2.profile-sup {
+    margin-right: 20px; /* h2要素を左に20px寄せる */
+}
+
+.content2 p {
+    font-size: 1.25rem;
+    white-space: pre-line; /* 改行を保持するための設定 */
+}
+
+.profile-p{
+    font-size: 1.25rem;
+}
+
+.profile-sup::before {
+    content: "|";
+    color: #D7005A;
+}
+
+.profile-textarea {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.text {
+    flex: 1; /* テキスト部分を残りのスペースを占めるようにする */
+    padding-right: 20px; /* 画像との間隔を調整 */
+}

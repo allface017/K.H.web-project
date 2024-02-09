@@ -6,15 +6,8 @@ app = Flask(__name__) # インスタンス生成
 
 @app.route('/') # URLを指定
 
-def hello_world():
-    return 'Hello World!'
 
-@app.route('/next')
-
-def next():
-    return 'next page'
-
-@app.route('/sample')
+@app.route('/')
 def sample():
     return render_template('index.html')
 
