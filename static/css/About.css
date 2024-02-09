@@ -1,0 +1,210 @@
+
+:root {
+    --About-h1-color: #000088;
+    --About-border-color: #87000B;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 15px;
+    margin: 20px 10px;
+}
+/* TOP */
+.Top-background {
+    max-width: 100%; /* 幅が画面に収まるようにする */
+    padding-bottom: 30px;
+}
+
+.Top-background img {
+    width: 100%; /* 要素の幅いっぱいに画像を表示 */
+    height: auto; /* アスペクト比を保持しつつ、画像の高さを自動調整 */
+}
+
+.Top-link-list {
+    padding-bottom: 136px;
+}
+
+.Top-link-list .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 70px;
+    width: 100%;
+    list-style: none;
+}
+
+.Top-link-list .item {
+    width: 33.33%;
+}
+
+.Top-link-list .link {
+    margin: 0 21px;
+    display: block;
+    text-decoration: none;
+}
+
+.Top-link-list .card {
+    display: block;
+}
+
+.Top-link-list .img img {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    width: 100%;
+    border-radius: 41px;
+}
+
+.Top-link-list .ttl {
+    margin-top: 25px;
+    letter-spacing: 0.07em;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #555;
+}
+
+.Top-link-list .txt {
+    margin-top: 8px;
+    letter-spacing: 0.06em;
+    font-size: 1rem;
+    color: #f7a3ba;
+}
+
+.fadeInDown {
+    visibility: visible;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* 活動内容CSS*/
+
+.About-font {
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+.About-title {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #FC2637, #FFB877);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+}
+
+.About-Sub-cont {
+    text-align: center;
+}
+
+.About-sub-title {
+    font-size: 2.5rem;
+    color: #87000B;
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 4px solid var(--About-border-color); /* 下線を追加 */
+}   
+.About-catch {
+    font-size: 2rem;
+    color: #D7005A;
+    letter-spacing: 3px;
+}
+.About-h3  {
+    font-size: 1.4rem;
+    color: #D7005A;
+    display:inline-block;   
+    border-bottom: 1px solid var(--About-border-color);
+}
+
+.content1 {
+    text-align: left; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content2,.content3 {
+    margin: 0 auto; /* 左右の余白を自動で調整して中央に配置 */
+    max-width: 820px; /* 必要に応じて適切な幅を指定 */
+}
+.About-img {
+    display: flex; /* 要素をフレックスボックスとして配置する */
+    justify-content: space-between; /* 要素間のスペースを均等に配置する */
+}
+
+.About_left,
+.About_right {
+    flex: 1; /* 要素の伸縮を均等にする */
+    margin-right: 10px; /* 左右の要素間に余白を設定する */
+}
+
+.About_left img,
+.About_right img {
+    max-width: 400px;
+    height: auto; /* 画像の縦横比を保持する */
+}
+
+.About-text {
+    color: #D7005A; /* テキストの色を設定してください */
+}
+
+.content1_a {
+    display: flex;
+    flex-direction: row; /* 画像を右側に配置 */
+    align-items: center; /* 中央揃え */
+}
+
+.About-img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-bottom: 100px; 
+
+}
+.About-dex {
+    color: #D7005A;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.About-sup{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.content2 h2.About-sup,
+.content3 h2.About-sup {
+    margin-right: 20px; /* h2要素を左に20px寄せる */
+}
+
+.content2 p {
+    font-size: 1.25rem;
+    white-space: pre-line; /* 改行を保持するための設定 */
+}
+
+.About-p{
+    font-size: 1.25rem;
+}
+
+.About-sup::before {
+    content: "|";
+    color: #D7005A;
+}
+
+.About-textarea {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.text {
+    flex: 1; /* テキスト部分を残りのスペースを占めるようにする */
+    padding-right: 20px; /* 画像との間隔を調整 */
+}
