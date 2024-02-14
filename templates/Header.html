@@ -1,11 +1,12 @@
-/* style.css */
+<style>
+    /* style.css */
 
 header {
     top: 0; /*下に固定*/
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
 }
 
 nav ul {
@@ -44,7 +45,7 @@ footer {
 
 header .gnav {
     position: absolute;
-    top: 0;
+    top: 20;
     right: 40px;
 }
 a {
@@ -61,7 +62,7 @@ position: relative;
 box-sizing: border-box;
 background: #FFFFFF;
 border-radius: 80px;
-width: 968px;
+width: 500px;
 height: 80px;
 transition: .1s ease-out;
 z-index: 1001;
@@ -115,7 +116,7 @@ transform: scale(0.9);
 /* .gnav - media query
 -----------------------------------*/
 @media (max-width: 1300px) {
-.gnav, .gnav::after {width: 868px;}
+.gnav, .gnav::after {width: 550px;}
 .gnav .btn-wrap {
     width: 130px;
 }
@@ -128,3 +129,24 @@ transform: scale(0.9);
 }
 }
 
+
+</style>
+<header id="header" class="">
+    <h1>h.k smileoffice</h1>
+    <nav class="gnav">
+        <div class="btn-wrap">
+            <a class="gnav-btn" href="" title="プロフィール"><span><strong>プロフィール</strong><em class="font-b">Profile</em></span></a>
+        </div>
+        
+        <div class="btn-wrap">
+            <a class="gnav-btn" href="" title="活動内容"><span><strong>活動内容</strong><em class="font-b">ABOUT</em></span></a>
+        </div>
+        
+        <div class="btn-wrap">
+            <a class="gnav-btn" href="" title="プロフィール"><span><strong>ご依頼の流れ</strong><em class="font-b">Request</em></span></a>
+        </div>
+        <div class="btn-wrap">
+            <a class="gnav-btn" href="" title="プロフィール"><span><strong>お問い合わせ</strong><em class="font-b">Inquiry</em></span></a>
+        </div>
+    </nav>
+</header>
