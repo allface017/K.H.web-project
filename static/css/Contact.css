@@ -1,0 +1,64 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #FFF9F4;
+    color: #CE355D;
+    }
+  .moji1{
+    color: rgb(0, 0, 22);
+    width: 40%;
+    height: auto;
+  }
+
+.contact{
+  width:80%;
+  margin-left: 40vw;
+}
+  .box{
+    display: flex;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+  }
+  section {
+    text-align: left;
+  }
+
+  
+.title{
+  text-align: center;
+  font-size: 30px;
+}
+
+input{
+  width: 400px;
+}
+
+.request{
+  background: -webkit-linear-gradient(0deg, #FC2637, #FFB877);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tab {
+  flex: 1;
+  margin: 5px 10px;
+  text-align: center;
+  background: -webkit-linear-gradient(0deg, #FFB877, #FF9BA3);
+  color: #fff;
+  border-radius: 1000px;
+  font-size: 30px; 
+  font-weight: 500;
+  border: none;
+}
+

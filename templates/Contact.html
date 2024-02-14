@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/Contact.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <section>
+    <div class="title"> 
+    <h1 class="request">お問い合わせフォーム</h1>
+    </div>
+    <div class="box">
+        <div class="contact">
+            <form action="/submit" method="post">
+                <p><label for="company_name">会社名/氏名:</label>
+                <input type="text" id="company_name" name="company_name" required></p>
+                <p><label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required></p>
+
+                <p/><label for="confirm_email">確認用メールアドレス:</label>
+                <input type="email" id="confirm_email" name="confirm_email" required></p>
+
+                <p><label for="phone">電話番号:</label>
+                <input type="tel" id="phone" name="phone" required></p>
+
+               <p><label for="message">お問い合わせ内容:</label>
+                <textarea id="message" name="message" required></textarea></p>
+
+                <input class="tab" type="submit" value="お問い合わせ内容を送信">
+                
+            </form>
+        </table>
+        </div>
+        <p class="moji1">
+            送信完了後、受領完了の自動送信メールをお送りしております。
+            その後、当院担当者より2〜3営業日以内にメールでご連絡させていただきます。
+            万が一ご連絡がない場合は、お手数ですが○○○-○○○-○○○○まで
+            ご連絡くださいますようお願い申し上げます。
+        </p>
+    </div>
+</section>
+</body>
+</html>

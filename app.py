@@ -17,7 +17,9 @@ def next():
 @app.route('/sample')
 def sample():
     return render_template('index.html')
-
+@app.route('/contact')
+def contact():
+    return render_template('Contact.html')
 
 # if __name__ == "__main__":
     # app.run(debug=True) # サーバー起動
