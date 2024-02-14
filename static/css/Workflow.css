@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Zen Dots";
+  src: 
+    url(../fonts/zen-dots-latin-400-normal.woff) format("woff"),
+    url(../fonts/zen-dots-latin-400-normal.woff2) format("woff2"),
+  ;
+}
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: 
+    url(../fonts/ZenMaruGothic-Regular.ttf) format("truetype"),
+  ;
+}
+
+#workflow{
+  background-color: #FFF8E3;
+  font-family: 'Zen Maru Gothic';
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Zen Dots';
+  font-weight: 400;
+}
+
+.request{
+  background: -webkit-linear-gradient(0deg, #FC2637, #FFB877);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.seminar{
+  color: #87000B;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tab {
+  flex: 1;
+  margin: 5px 10px;
+  text-align: center;
+  background-color: #E2929B;
+  color: #fff;
+  border-radius: 1000px;
+  font-size: 30px; 
+  font-weight: 500;
+}
+
+.tab:hover {
+  background-color: #8c595f;
+}
+
+.content {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hidden {
+  display: none;
+}
+
+.list ui{
+  color: #DE1066;
+  font-size: 45px;
+}
+
+.list li{
+  color: #676767;
+  font-size:30px;
+  text-align: left;
+}
+
+.list{
+  text-align: center;
+}
+
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-round {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #926136;
+}
+.arrow-round::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -2px;
+  display: block;
+  width: 25px;
+  height: 10px;
+  background-color: #926136;
+  transform: rotate(-45deg);
+}
+.arrow-round::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: -2px;
+  display: block;
+  width: 25px;
+  height: 10px;
+  background-color: #926136;
+  transform: rotate(45deg);
+}
+
+.flow{
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(#E2929B, #FEDC40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #87000B
+}
